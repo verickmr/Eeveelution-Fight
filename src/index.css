@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+.pokeball {
+  display: block;
+  width: 48px; /* Reduzido ainda mais */
+  height: 48px; /* Reduzido ainda mais */
+  background: radial-gradient(
+      white 4px, /* Ajustado proporcionalmente */
+      black 4.5px 5px,
+      white 5px 6px,
+      black 6px 8px,
+      transparent 8.5px
+    ),
+    linear-gradient(to bottom, red 0 20px, black 20px 24px, white 24px 100%);
+  border-radius: 50%;
+  outline: 4px solid white; 
+  border: 2px solid black; /* Reduzido proporcionalmente */
+  box-shadow: inset -4px -2px 0 0 rgba(0, 0, 0, 0.2); /* Ajustado para escala */
+}
+ 
+.desativa{ display: block;
+  width: 48px;
+  height: 48px;
+  background: radial-gradient(
+      white 4px,
+      #333 4.5px 5px, /* Cor mais escura para a parte preta */
+      white 5px 6px,
+      #333 6px 8px, /* Continuar o tom escuro */
+      transparent 8.5px
+    ),
+    linear-gradient(to top, #555 0 20px, #333 20px 24px, #222 24px 100%); /* Escurecer o fundo */
+  border-radius: 50%;
+  outline: 4px solid white; 
+  border: 2px solid #444; /* Bordas mais escuras */
+  box-shadow: inset -4px -2px 0 0 rgba(0, 0, 0, 0.3); /* Aumenta a sombra interna para dar mais profundidade */
+  opacity: 0.7;}
+
+
+  .game-font {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
